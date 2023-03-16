@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 700px;
+  box-sizing: content-box;
+  margin: 0 auto;
+  padding: 40px;
+ 
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+}
+
+.order_number {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #73798C;
+  margin-bottom: 5px;
+}
+
+.order_status {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 31px;
+}
+
+h1, .time {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 49px;
+  color: #000000;
+}
+
+.adress {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #000000;
+  margin-bottom: 70px;
+}
+
+.adress::before {
+  content: "";
+  display: block;
+  max-width: 700px;
+  height: 4px;
+  background-color: #E2E2E9;
+  border-radius: 2px;
+  margin-bottom: 10px;
+}
+
+.buttons {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.reset {
+  width: 160px;
+  height: 48px;
+  background: #FFF0E6;
+  border: none;
+  border-radius: 1000px;
+  color: #D15700;
+  cursor: pointer;
+}
+
+.comeback {
+  width: 190px;
+  height: 48px;
+  background: #FFF0E6;
+  border: none;
+  border-radius: 1000px;
+  color: #FFFFFF;
+  background: #F96900;
+  border-radius: 1000px;
+  cursor: pointer;
+}
+
+@media (max-width: 339px) {
+  .container {
+    padding: 16px;
+  }
+  .order_number {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    margin-bottom: 4px;
+  }
+  h1 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+  }
+  .time {
+    display: none;
+  }
+
+  .order_status {
+    margin-bottom: 12px;
+  }
+
+  .adress {
+    width: 288px;
+    height: 106px;
+    background: #F3F3F7;
+    border-radius: 10px;
+    margin: 0 auto;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    font-style: normal;
+    margin-bottom: 70px;
+    padding: 18px 90px 18px 20px;
+  }
+
+  .adress::before {
+    display: none;
+  }
+
+  .buttons {
+    flex-direction: column;
+  }
+
+  .reset {
+    width: 288px;
+    margin-bottom: 10px;
+  }
+
+  .comeback {
+    width: 288px;
+  }
+}
+
+
+@media (max-width: 443px) {
+  .time {
+    display: none;
+  }
+
+  .buttons {
+    flex-direction: column;
+  }
+
+  .reset {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .comeback {
+    width: 100%;
+  }
+}
